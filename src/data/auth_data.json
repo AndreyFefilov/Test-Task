@@ -1,0 +1,24 @@
+{
+  "auth_data": [
+    {
+      "id": 111,
+      "username": "admin1",
+      "password": "1111"
+    },
+    {
+      "id": 222,
+      "username": "admin2",
+      "password": "2222"
+    },
+    {
+      "id": 333,
+      "username": "admin3",
+      "password": "3333"
+    },
+    {
+      "id": 444,
+      "username": "Administrator",
+      "password": "admin"
+    }
+  ]
+}

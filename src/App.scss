@@ -1,0 +1,205 @@
+$headerBackground: #212121;
+$iconHoverColor: #666666;
+$btnColor: #a41414;
+$btnColorHover: #840b0b;
+
+html,body {
+    height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: $headerBackground;
+
+    &__left-block {
+        display: flex;
+        height: 40px;
+        margin: -3px 10px 5px 0;
+        flex-grow: 1;
+
+        &__logo {
+            height: 100%;
+        }
+
+        &__text {
+            margin: 8px 0 0 10px
+        }
+    }
+
+    &__right-block {
+        display: flex;
+
+        &__exit-icon {
+            margin-left: 15px;
+
+            &:hover {
+                transition: 0.3s;
+                cursor: pointer;
+                color: $iconHoverColor;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: auto;
+    background: #cecece;
+    padding: 7px;
+
+
+    &__text {
+        color: #505050;
+        &--link {
+            font-weight: bold;
+            text-decoration: none;
+            color: $headerBackground;
+        }
+    }
+}
+
+.MuiButton-containedPrimary.action-btn {
+    background-color: $btnColor;
+    width: 100%;
+    &:hover {
+        background-color: $btnColorHover;
+    }
+}
+
+.MuiContainer-root.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex: auto;
+    position: relative;
+}
+
+.MuiCard-root.auth-card {
+    width: 350px;
+    padding: 0 15px 10px 15px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__field {
+        display: flex;
+        width: 100%;
+
+        &__icon {
+            margin: 36px 10px 0 0;
+        }
+    }
+}
+
+.my-input {
+    width: 100%;
+}
+
+
+.help-block {
+    font-size: 18px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $iconHoverColor;
+        &:hover {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.87);
+        }
+}
+
+.tooltip-block {
+    width: 280px;
+    font-size: 13px;
+}
+
+.form-text-field {
+    margin: 0 5px 5px 5px;
+}
+
+.MuiDialog-paperWidthSm.dialog {
+    max-width: 400px;
+}
+
+.MuiContainer-root.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    align-items: center;
+    flex: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.add-btn-block {
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    position: relative;
+    bottom: 15px;
+    color: red;
+    font-size: 12px;
+}
+
+.actions-table-block {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+
+    &__input-block {
+        flex-grow: 1;
+
+        &__search-input {
+            width: 500px;
+        }
+    }
+    &:last-child {
+        margin-left: auto;
+      }
+}
+
+.table-horisontal-line {
+    width: 100%;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    margin: 20px 0 5px 0;
+}
+
+.table-tools {
+    color: rgb(175, 175, 175);
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    &:hover {
+        background-color: transparent;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}
+
+
+.edit-button:hover {
+    color: $iconHoverColor;
+}
+
+.delete-button {
+    margin-left: 10px;
+    :hover {
+        color: $btnColor;
+    }
+}
